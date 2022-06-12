@@ -1,7 +1,8 @@
 name: aptlist
+on:
   workflow_dispatch:
 jobs:
   aptlist:
     runs-on: ubuntu-latest
+    steps:
       - run: sudo apt-get list --installed
-    
